@@ -52,6 +52,6 @@ public class OperationController {
     @DeleteMapping("/delete/{customerId}/{operationId}")
     public String deleteOperation(@PathVariable long customerId, @PathVariable long operationId) {
         Operation operation = operationService.deleteOperation(customerId, operationId);
-        return operation + " is delete";
+        return operation + "is deleted";
     }
 }
